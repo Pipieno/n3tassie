@@ -1,31 +1,30 @@
-Equipe de desenvolvimento: Paulo Henrique Vidal Assis de Paula, Bruno Miranda Tessilla e Nicolas Stringari da Silva.
+Aluno: Enzo Coelho Rossa.
+Tela de Login: Na tela de login, ao pressionar o botão (imagem da logo do aplicativo), o processo de login é iniciado usando a ferramenta google_sign_in para autenticação via Google.
 
-Tela de login: Na tela de login, tem o botão (imagem da logo do aplicativo) que se pressionado, inicia o login utilizado a ferramenta do google (google_sign_in).
+Tela Inicial: Na tela inicial, na parte do Bottom Navigation Bar, há um botão para logout. Ao ser pressionado, o usuário é desconectado da conta atualmente logada.
 
-Tela home: Na tela home, na parte do bottom navigation bar, tem um botão para logout, que se pressionado, faz logout da conta logada.
+Dependências Utilizadas:
 
-Depêndencias utilizadas: 
-  <li>firebase_auth: ^5.3.3</li>
-  <li>google_sign_in: ^6.2.2</li>
-  <li>firebase_core: ^3.8.0</li>
-  <li>flutter_launcher_icons: ^0.13.1</li>
+firebase_auth: ^5.3.3
+google_sign_in: ^6.2.2
+firebase_core: ^3.8.0
+flutter_launcher_icons: ^0.13.1
+Versões do Flutter/Dart:
 
-Versões do Flutter/Dart: 
-  <li>Flutter 3.24.3</li>
-  <li>Dart 3.5.3</li>
-
+Flutter 3.24.3
+Dart 3.5.3
 Versão mínima do SDK: 23
 
 Como importar o projeto:
-  <li>Para importar, pegue o link do projeto no GitHub e insira no software que está usando para desenvolver o aplicativo.</li>
 
+Obtenha o link do projeto no GitHub e insira-o no software utilizado para o desenvolvimento do aplicativo.
 Como configurar o projeto:
-  <li>Faça a importação das depêndencias necessárias, usando flutter pub get.</li>
-  <li>Crie um projeto no Firebase e habilite a autenticação na aba de criação.</li>
-  <li>Na página inicial do projeto no Firebase, inicie a conexão com o Flutter.</li>
-  <li>Agora no projeto, vá no terminal e insira 'firebase login'.</li>
-  <li>Insira os comandos que o firebase indica no terminal.</li>
-  <li>Crie um projeto no Firebase e habilite a autenticação na aba de criação.</li>
-  <li>O Google Sign-in requer uma impressão digital para ser usado. Você pode obter de duas formas: usando o comando ./gradlew signingReport ou keytool -exportcert -keystore "seu caminho de             diretório do debug.keystore (exemplo: C:\Users\meuNome\.android\debug.keystore)>" -list -v</li>
-  <li>Nas configurações do projeto no firebase, vá em "Apps Android" e insira a chave SHA-1 na parte de impressões digitais.</li>
-  
+
+Após importar o projeto, execute o comando flutter pub get para instalar as dependências necessárias.
+Crie um projeto no Firebase e habilite a autenticação na aba de criação.
+Na página inicial do projeto no Firebase, inicie a conexão com o Flutter.
+No terminal, execute o comando firebase login e siga as instruções exibidas.
+Para obter a chave SHA-1 necessária para o Google Sign-in, use um dos seguintes comandos:
+./gradlew signingReport
+keytool -exportcert -keystore "seu caminho de diretório do debug.keystore" -list -v
+No Firebase, acesse as configurações do projeto e, na seção "Apps Android", insira a chave SHA-1 obtida.
